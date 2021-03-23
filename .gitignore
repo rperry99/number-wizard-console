@@ -34,3 +34,10 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+# Other
+.vscode
+/Logs
+/Packages
+/ProjectSettings
+/UserSettings
