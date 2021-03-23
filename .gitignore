@@ -36,7 +36,7 @@ sysinfo.txt
 *.unitypackage
 
 # Other
-vscode.*
+.vscode.*
 Logs.*
 Packages.*
 ProjectSettings.*

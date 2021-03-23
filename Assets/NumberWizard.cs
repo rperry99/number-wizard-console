@@ -10,6 +10,13 @@ public class NumberWizard : MonoBehaviour {
     
     // Start is called before the first frame update
     void Start() {
+        StartGame();
+    }
+
+    void StartGame() {
+        // Reset variables
+        min = 1;
+        max = 1000;
         // Generate a guess
         guess = (min + max) / 2;
         
@@ -35,6 +42,7 @@ public class NumberWizard : MonoBehaviour {
             Debug.Log($"Lower huh... how about {guess}?");
         } else if (Input.GetKeyDown(KeyCode.Return)) {
             Debug.Log($"Ha! I knew the answer was {guess} all along!");
+            StartGame();
         }
     }
 }
